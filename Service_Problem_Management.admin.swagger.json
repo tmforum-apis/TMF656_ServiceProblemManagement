@@ -316,230 +316,6 @@
                 }
             }
         }, 
-        "/serviceProblemEventRecord": {
-            "get": {
-                "operationId": "listServiceProblemEventRecord", 
-                "summary": "List or find 'ServiceProblemEventRecord' objects", 
-                "tags": [
-                    "serviceProblemEventRecord"
-                ], 
-                "parameters": [
-                    {
-                        "type": "string", 
-                        "required": false, 
-                        "in": "query", 
-                        "name": "fields", 
-                        "description": "Comma separated properties to display in response"
-                    }, 
-                    {
-                        "type": "integer", 
-                        "required": false, 
-                        "in": "query", 
-                        "name": "offset", 
-                        "description": "Requested index for start of resources to be provided in response"
-                    }, 
-                    {
-                        "type": "integer", 
-                        "required": false, 
-                        "in": "query", 
-                        "name": "limit", 
-                        "description": "Requested number of resources to be provided in response"
-                    }
-                ], 
-                "responses": {
-                    "200": {
-                        "description": "Ok", 
-                        "schema": {
-                            "items": {
-                                "$ref": "#/definitions/ServiceProblemEventRecord"
-                            }, 
-                            "type": "array"
-                        }
-                    }, 
-                    "400": {
-                        "description": "Bad Request", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "401": {
-                        "description": "Unauthorized", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "403": {
-                        "description": "Forbidden", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "404": {
-                        "description": "Not Found", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "405": {
-                        "description": "Method Not allowed", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "409": {
-                        "description": "Conflict", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "500": {
-                        "description": "Internal Server Error", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }
-                }
-            }, 
-            "post": {
-                "operationId": "createServiceProblemEventRecord", 
-                "summary": "Creates a 'ServiceProblemEventRecord'", 
-                "tags": [
-                    "serviceProblemEventRecord"
-                ], 
-                "parameters": [
-                    {
-                        "schema": {
-                            "$ref": "#/definitions/ServiceProblemEventRecord_Create"
-                        }, 
-                        "required": true, 
-                        "in": "body", 
-                        "name": "serviceProblemEventRecord", 
-                        "description": "The Service Problem Event Record to be created"
-                    }
-                ], 
-                "responses": {
-                    "201": {
-                        "description": "Created", 
-                        "schema": {
-                            "$ref": "#/definitions/ServiceProblemEventRecord"
-                        }
-                    }, 
-                    "400": {
-                        "description": "Bad Request", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "401": {
-                        "description": "Unauthorized", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "403": {
-                        "description": "Forbidden", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "404": {
-                        "description": "Not Found", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "405": {
-                        "description": "Method Not allowed", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "409": {
-                        "description": "Conflict", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "500": {
-                        "description": "Internal Server Error", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }
-                }
-            }
-        }, 
-        "/serviceProblemEventRecord/{id}": {
-            "get": {
-                "operationId": "retrieveServiceProblemEventRecord", 
-                "summary": "Retrieves a 'ServiceProblemEventRecord' by Id", 
-                "tags": [
-                    "serviceProblemEventRecord"
-                ], 
-                "parameters": [
-                    {
-                        "required": true, 
-                        "type": "string", 
-                        "name": "id", 
-                        "in": "path", 
-                        "description": "Identifier of the Service Problem Event Record"
-                    }
-                ], 
-                "responses": {
-                    "200": {
-                        "description": "Ok", 
-                        "schema": {
-                            "items": {
-                                "$ref": "#/definitions/ServiceProblemEventRecord"
-                            }, 
-                            "type": "array"
-                        }
-                    }, 
-                    "400": {
-                        "description": "Bad Request", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "401": {
-                        "description": "Unauthorized", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "403": {
-                        "description": "Forbidden", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "404": {
-                        "description": "Not Found", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "405": {
-                        "description": "Method Not allowed", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "409": {
-                        "description": "Conflict", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }, 
-                    "500": {
-                        "description": "Internal Server Error", 
-                        "schema": {
-                            "$ref": "#/definitions/Error"
-                        }
-                    }
-                }
-            }
-        }, 
         "/hub": {
             "post": {
                 "operationId": "registerListener", 
@@ -673,109 +449,15 @@
         }
     }, 
     "definitions": {
-        "ServiceProblemEventRecord": {
-            "type": "object", 
-            "description": "Record of the ServiceProblemEvent", 
-            "required": [
-                "id", 
-                "eventType", 
-                "eventTime", 
-                "recordTime", 
-                "serviceProblem"
-            ], 
-            "properties": {
-                "eventTime": {
-                    "type": "string", 
-                    "format": "date-time", 
-                    "description": "Time of the record"
-                }, 
-                "eventType": {
-                    "type": "string", 
-                    "description": "Equals to event type of the recorded event"
-                }, 
-                "href": {
-                    "type": "string", 
-                    "description": "Reference to the ServiceProblemEventRecord,"
-                }, 
-                "id": {
-                    "type": "string", 
-                    "description": "Identifier of the service problem event record."
-                }, 
-                "recordTime": {
-                    "type": "string", 
-                    "format": "date-time", 
-                    "description": "Time at which the record was created"
-                }, 
-                "serviceProblem": {
-                    "type": "array", 
-                    "items": {
-                        "$ref": "#/definitions/ServiceProblemRef"
-                    }
-                }, 
-                "@type": {
-                    "type": "string", 
-                    "description": "The class type of the actual resource (for type extension)."
-                }, 
-                "@schemaLocation": {
-                    "type": "string", 
-                    "description": "A link to the schema describing a resource (for type extension)."
-                }, 
-                "@baseType": {
-                    "type": "string", 
-                    "description": "The base type for use in polymorphic collections"
-                }
-            }
-        }, 
-        "ServiceProblemEventRecord_Create": {
-            "type": "object", 
-            "description": "Record of the ServiceProblemEvent\nSkipped properties: id,href", 
-            "required": [
-                "id", 
-                "eventType", 
-                "eventTime", 
-                "recordTime", 
-                "serviceProblem"
-            ], 
-            "properties": {
-                "eventTime": {
-                    "type": "string", 
-                    "format": "date-time", 
-                    "description": "Time of the record"
-                }, 
-                "eventType": {
-                    "type": "string", 
-                    "description": "Equals to event type of the recorded event"
-                }, 
-                "recordTime": {
-                    "type": "string", 
-                    "format": "date-time", 
-                    "description": "Time at which the record was created"
-                }, 
-                "serviceProblem": {
-                    "type": "array", 
-                    "items": {
-                        "$ref": "#/definitions/ServiceProblemRef"
-                    }
-                }, 
-                "@type": {
-                    "type": "string", 
-                    "description": "The class type of the actual resource (for type extension)."
-                }, 
-                "@schemaLocation": {
-                    "type": "string", 
-                    "description": "A link to the schema describing a resource (for type extension)."
-                }, 
-                "@baseType": {
-                    "type": "string", 
-                    "description": "The base type for use in polymorphic collections"
-                }
-            }
-        }, 
         "ServiceProblem": {
             "type": "object", 
             "description": "The problem information for Middle B which is abstracted in the service layer from the issued event information by First B", 
             "required": [
-                "id"
+                "category", 
+                "priority", 
+                "description", 
+                "reason", 
+                "originatingSystem"
             ], 
             "properties": {
                 "affectingServiceNumber": {
@@ -784,7 +466,7 @@
                 }, 
                 "category": {
                     "type": "string", 
-                    "description": "Classifier for the problem. Settable. For example, this is used for distinguish the category of problem originator in [role].[category] format. ex)  serviceProvider.declarer, supplier.originated, system.originated"
+                    "description": "Classifier for the problem. Settable. For example, this is used for distinguish the category of problem originator in [role].[category] format. Example: serviceProvider.declarer, supplier.originated, system.originated"
                 }, 
                 "correlationId": {
                     "type": "string", 
@@ -938,7 +620,8 @@
                 "category", 
                 "priority", 
                 "description", 
-                "reason"
+                "reason", 
+                "originatingSystem"
             ], 
             "properties": {
                 "affectingServiceNumber": {
@@ -947,7 +630,7 @@
                 }, 
                 "category": {
                     "type": "string", 
-                    "description": "Classifier for the problem. Settable. For example, this is used for distinguish the category of problem originator in [role].[category] format. ex)  serviceProvider.declarer, supplier.originated, system.originated"
+                    "description": "Classifier for the problem. Settable. For example, this is used for distinguish the category of problem originator in [role].[category] format. Example: serviceProvider.declarer, supplier.originated, system.originated"
                 }, 
                 "correlationId": {
                     "type": "string", 
@@ -1096,7 +779,7 @@
                 }, 
                 "category": {
                     "type": "string", 
-                    "description": "Classifier for the problem. Settable. For example, this is used for distinguish the category of problem originator in [role].[category] format. ex)  serviceProvider.declarer, supplier.originated, system.originated"
+                    "description": "Classifier for the problem. Settable. For example, this is used for distinguish the category of problem originator in [role].[category] format. Example: serviceProvider.declarer, supplier.originated, system.originated"
                 }, 
                 "description": {
                     "type": "string", 
@@ -1213,27 +896,12 @@
                 }
             }
         }, 
-        "ServiceProblemRef": {
-            "type": "object", 
-            "description": "A reference to a service problem", 
-            "properties": {
-                "href": {
-                    "type": "string", 
-                    "description": "The reference to the Service problem"
-                }, 
-                "id": {
-                    "type": "string", 
-                    "description": "The identifier of the service problem"
-                }, 
-                "@referredType": {
-                    "type": "string", 
-                    "description": "The actual type of the target instance when needed for disambiguation."
-                }
-            }
-        }, 
         "TrackingRecord": {
             "type": "object", 
             "description": "Tracking records allow the tracking of modifications on the problem.The tracking records should not be embedded in the problem to allow retrieving the problem without the tracking records.", 
+            "required": [
+                "description"
+            ], 
             "properties": {
                 "description": {
                     "type": "string", 
@@ -1266,6 +934,14 @@
                 "@type": {
                     "type": "string", 
                     "description": "The class type of the actual resource (for type extension)."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "A link to the schema describing a resource (for type extension)."
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "The base type for use in polymorphic collections"
                 }
             }
         }, 
