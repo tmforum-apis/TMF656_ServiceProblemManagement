@@ -7,7 +7,7 @@ infrastructure providers.The event information includes alarm information, perfo
 anomaly information, trouble ticket information, SLA violation, maintenance information
 and prediction information.
 
-To access this API; (the Specification, Postman Collection, Swagger file, Swagger-UI,
+To access this API; (the Specification, Postman Collection, Swagger file, 
 Reference Implementation, Conformance Profile, and CTK) go to the Open API table at:
 
 https://projects.tmforum.org/wiki/display/API/Open+API+Table
