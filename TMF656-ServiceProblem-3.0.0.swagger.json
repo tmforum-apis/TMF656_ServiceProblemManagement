@@ -3,10 +3,10 @@
     "info": {
         "title": "Service Problem Management", 
         "description": "## TMF API Reference: TMF656 - Service Problem Management\n\n### Release : 18.5 - December 2018\n\nService Problem Management API goal is to provide the ability to manage problems in the Service domain. \n\n### Resource \n- serviceProblem\n\n### Operations\nService Problem Management API performs the following operations on the resource :\n- Retrieve an entity or a collection of entities depending on filter criteria\n- Partial update of an entity (including updating rules)\n- Create an entity (including default values and creation rules)\n- Delete an entity (for administration purposes)\n- Manage notification of events", 
-        "version": "4.0.0"
+        "version": "3.0.0"
     }, 
     "host": "serverRoot", 
-    "basePath": "/tmf-api/serviceProblemManagement/v4/", 
+    "basePath": "/tmf-api/serviceProblemManagement/v3/", 
     "schemes": [
         "https"
     ], 
