@@ -1,13 +1,8 @@
-# TMF656_ServiceProblemManagement
-TM Forum Open APIs (Apache 2.0) Service Problem Management API
+# TMF656 ServiceProblemManagement
 
-The SPM API is used to manage service problems. Service problems are generated based
-on the information declared by a partner or the event information notified from
-infrastructure providers.The event information includes alarm information, performance
-anomaly information, trouble ticket information, SLA violation, maintenance information
-and prediction information.
+TM Forum Open API (Apache 2.0) ServiceProblemManagement API.
 
-To access this API; (the Specification, Postman Collection, Swagger file, 
-Reference Implementation, Conformance Profile, and CTK) go to the Open API table at:
+on the information declared by a partner or the event information notified from infrastructure providers.The event information includes alarm information, performance anomaly information, trouble ticket information, SLA violation, maintenance information and prediction information.
 
-https://projects.tmforum.org/wiki/display/API/Open+API+Table
+The resources in this repository are a mirror of the official versions, published here for your convenience.
+The authoritative source of information for this API is: https://www.tmforum.org/oda/open-apis/directory/
